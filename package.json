@@ -43,7 +43,21 @@
     "parserOptions": {
       "parser": "babel-eslint"
     },
-    "rules": {},
+    "rules": {
+      "semi": [
+        "error",
+        "never"
+      ],
+      "linebreak-style": 0,
+      "global-require": 0,
+      "eslint linebreak-style": [
+        0,
+        "error",
+        "windows"
+      ],
+      "max-len": "off",
+      "no-plusplus": "off"
+    },
     "overrides": [
       {
         "files": [
