@@ -2,16 +2,23 @@
   <v-container>
     <v-row>
       <!-- <v-app-bar class="menu-wrapp"> -->
-        <v-img>logo</v-img>
-        <v-spacer></v-spacer>
-        <!-- <v-btn v-if="mobile_icon" v-model="drawer" @click="toggleNav">open</v-btn> -->
-        <v-app-bar-nav-icon v-if="mobile_icon" @click="toggleNav">{{ hidden ? 'Hide' : 'Show' }}</v-app-bar-nav-icon>
-        <v-list class="menu" ref="nav">
-          <v-list-item class="menu-item" v-for="(link,index ) in links" :key="index">
+      <v-img>logo</v-img>
+      <v-spacer></v-spacer>
+      <!-- <v-btn v-if="mobile_icon" v-model="drawer" @click="toggleNav">open</v-btn> -->
+      <v-app-bar-nav-icon v-if="mobile_icon" @click="toggleNav">{{ hidden ? 'Hide' : 'Show' }}</v-app-bar-nav-icon>
+      <v-list class="menu" ref="nav">
+        <!-- <v-list-item class="menu-item" v-for="link in links" :key="link.text" @click="openLoginPopup">
             {{link.text}}
             <v-icon v-text="link.icon"></v-icon>
-          </v-list-item>
-        </v-list>
+        </v-list-item>-->
+        <v-list-item class="menu-item">Blog</v-list-item>
+        <v-list-item class="menu-item">About us</v-list-item>
+        <v-list-item class="menu-item">Contact</v-list-item>
+        <v-list-item class="menu-item" @click="openLoginPopup">
+          Login
+          <v-icon>mdi-account</v-icon>
+        </v-list-item>
+      </v-list>
       <!-- </v-app-bar> -->
     </v-row>
   </v-container>
@@ -62,19 +69,23 @@ export default {
       mobile_icon: false,
       drawer: false,
       hidden: false,
-      links: [
-        { text: 'Blog' },
-        { text: 'About us' },
-        { text: 'Contact' },
-        {
-          text: 'Login ', icon: 'mdi-account',
-        },
-      ],
+      // links: [
+      //   { text: 'Blog' },
+      //   { text: 'About us' },
+      //   { text: 'Contact' },
+      //   {
+      //     text: 'Login ', icon: 'mdi-account', link: 'openLoginPopup',
+      //   },
+      // ],
     }
   },
   methods: {
     resizeHandler() {
       this.mobile_icon = window.innerWidth <= 768
+    },
+    openLoginPopup() {
+      this.toggleNav()
+      this.$bus.$emit('popupLogin', { show: true })
     },
     show() {
       this.hidden = !this.hidden
@@ -84,7 +95,6 @@ export default {
       this.show()
       return nav.contains('active') ? nav.remove('active') : nav.add('active')
     },
-    // document.addEventListener('click')
   },
   mounted() {
     window.addEventListener('resize', this.resizeHandler)
