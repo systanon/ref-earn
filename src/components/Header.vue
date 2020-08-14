@@ -1,7 +1,7 @@
 <template>
-  <v-container>
+  <v-container><!-- ??? -->
     <v-row>
-      <HeaderNavMenu />
+      <!-- <HeaderNavMenu /> -->
       <v-col cols="12" order="2" xs="12" order-md="1" md="6">
         <v-row>
           <v-card flat class="mt-15 header-text">
@@ -37,11 +37,12 @@
 }
 </style>
 <script>
-import HeaderNavMenu from '@/components/HeaderNavMenu.vue'
+// import HeaderNavMenu from '@/components/HeaderNavMenu.vue'
 
 export default {
+  name: 'Header',
   components: {
-    HeaderNavMenu,
+    // HeaderNavMenu,
   },
 }
 </script>
