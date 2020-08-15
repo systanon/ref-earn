@@ -1,5 +1,5 @@
 <template>
-  <v-container><!-- ??? -->
+  <v-container ><!-- ??? -->
     <v-row>
       <!-- <HeaderNavMenu /> -->
       <v-col cols="12" order="2" xs="12" order-md="1" md="6">
@@ -15,7 +15,7 @@
       </v-col>
       <v-col cols="12" order="1" xs="12" order-md="2" md="6" >
         <v-row>
-          <v-img src="../assets/header.svg"></v-img>
+          <v-img src="../assets/header.svg" ></v-img>
         </v-row>
       </v-col>
     </v-row>

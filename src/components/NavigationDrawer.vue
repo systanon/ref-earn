@@ -1,7 +1,9 @@
 <template>
-  <v-navigation-drawer>
+<div>
+    <v-navigation-drawer>
 
   </v-navigation-drawer>
+</div>
 </template>
 
 <style scoped>

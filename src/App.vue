@@ -1,24 +1,26 @@
 <template>
   <v-app>
     <!-- <Popups /> -->
-    <NavigationDrawer />
+    <!-- <NavigationDrawer /> -->
 
     <AppBar v-if="appBarShowInRouteNames.includes(this.$route.name)" />
 
     <v-main>
-      <v-container fluid>
+      <v-container>
         <router-view />
       </v-container>
     </v-main>
 
     <Footer v-if="footerShowInRouteNames.includes(this.$route.name)" />
+    <Popups/>
   </v-app>
 </template>
 
 <script>
 import AppBar from '@/components/AppBar.vue'
 import Footer from '@/components/Footer.vue'
-import NavigationDrawer from '@/components/NavigationDrawer.vue'
+// import NavigationDrawer from '@/components/NavigationDrawer.vue'
+import Popups from '@/components/popups/Popups.vue'
 
 export default {
   name: 'App',
@@ -29,7 +31,8 @@ export default {
   components: {
     AppBar,
     Footer,
-    NavigationDrawer,
+    // NavigationDrawer,
+    Popups,
   },
 }
 </script>

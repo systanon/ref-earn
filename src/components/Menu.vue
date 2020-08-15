@@ -1,8 +1,8 @@
 <template>
-  <v-menu>
+  <v-card flat>
 
     <!-- <v-btn v-if="mobile_icon" v-model="drawer" @click="toggleNav">open</v-btn> -->
-    <v-app-bar-nav-icon v-if="mobile_icon" @click="toggleNav">{{ hidden ? 'Hide' : 'Show' }}</v-app-bar-nav-icon>
+    <v-app-bar-nav-icon class="btn-mobile-menu" v-if="mobile_icon" @click="toggleNav">{{ hidden ? 'Hide' : 'Show' }}</v-app-bar-nav-icon>
     <v-list class="menu" ref="nav">
       <!-- <v-list-item class="menu-item" v-for="link in links" :key="link.text" @click="openLoginPopup">
             {{link.text}}
@@ -16,7 +16,7 @@
         <v-icon>mdi-account</v-icon>
       </v-list-item>
     </v-list>
-  </v-menu>
+  </v-card>
 </template>
 
 <style scoped>
@@ -29,6 +29,9 @@
   padding: 0 0;
   white-space: nowrap;
 }
+.btn-mobile-menu {
+  z-index: 10;
+}
 .menu-item:not(:last-child) {
   margin-right: 20px;
 }
@@ -40,14 +43,13 @@
     position: fixed;
     align-items: center;
     left: 0;
-    top: 0%;
+    top: 0;
     /* transform: translateX(-50%); */
     flex-direction: column;
     opacity: 0;
     transition: opacity 1s ease-out 0.1s;
   }
   .active {
-    top: 15%;
     z-index: 5;
     opacity: 1;
   }
