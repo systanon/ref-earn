@@ -12,7 +12,7 @@
     </v-main>
 
     <Footer v-if="footerShowInRouteNames.includes(this.$route.name)" />
-    <Popups/>
+    <Popups />
   </v-app>
 </template>
 
