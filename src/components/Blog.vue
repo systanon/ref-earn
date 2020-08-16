@@ -3,7 +3,6 @@
     <h2>Blog</h2>
     <v-row>
       <v-col v-for="post in posts" cols="4" xs="12" :key="post.link">
-        <!-- <v-col v-for="post in posts" cols="12" order="2" xs="12" order-md="1" md="6" imageURL date link="post.link"> -->
         <BlogCard
           :title="post.title"
           :description="post.description"
@@ -16,7 +15,20 @@
   </v-container>
 </template>
 
+//WARN: Отсутствуют шрифты.
+//REVIEW: Нужно заюзать слайдер.
 <style scoped>
+h2 {
+  margin-bottom: 52px;
+
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 46px;
+  line-height: 68px;
+
+  color: #000000;
+}
 </style>
 
 <script>
