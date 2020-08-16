@@ -1,7 +1,7 @@
 <template>
 <!-- <v-container> -->
   <!-- <v-row> -->
-    <v-app-bar color="light" flat app>
+    <v-app-bar color="light" elevate-on-scroll hide-on-scroll scroll-threshold="100" app>
     <v-img>logo</v-img>
     <v-spacer></v-spacer>
 
