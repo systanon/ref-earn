@@ -1,6 +1,6 @@
 <template>
   <v-card flat class="card">
-    <v-img height="237" width="380" src="https://picsum.photos/380/237?random" alt></v-img>
+    <v-img  src="https://picsum.photos/380/237?random" alt></v-img>
     <!-- <v-img height="237" width="380" :src="imageURL" alt=""></v-img> -->
     <div height="277" width="52" class="date">
       <p class="data">{{ date.getDate() }}</p>
@@ -17,8 +17,8 @@
       <v-btn
         bottom
         left
-        width="120"
-        height="40"
+        min-width="120"
+        min-height="40"
         color="rgba(16, 156, 241, 0.32)"
         depressed
         class="button"
