@@ -7,7 +7,9 @@
 
     <v-main>
       <v-container fluid>
-        <router-view />
+        <v-row>
+            <router-view />
+        </v-row>
       </v-container>
     </v-main>
 

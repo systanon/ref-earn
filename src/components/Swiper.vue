@@ -9,7 +9,6 @@
         :link="element.link"
       />
     </swiper-slide>
-    <!-- <div class="swiper-pagination" slot="pagination"></div> -->
     <div v-if="screen >= 600" class="swiper-button-prev" slot="button-prev"></div>
     <div v-if="screen >= 600" class="swiper-button-next" slot="button-next"></div>
   </swiper>
@@ -45,8 +44,6 @@ export default {
   props: {
     elements: Array,
   },
-  // name: 'swiper-example-loop',
-  // title: 'Loop mode / Infinite loop',
   components: {
     swiper,
     swiperSlide,

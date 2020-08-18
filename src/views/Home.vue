@@ -1,11 +1,11 @@
 <template>
-  <v-container fluid>
+  <v-card flat>
     <Header />
     <Blog />
     <AboutUs />
     <Registration />
     <Contact />
-  </v-container>
+  </v-card>
 </template>
 <script>
 import Header from '@/components/Header.vue'

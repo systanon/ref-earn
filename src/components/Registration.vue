@@ -1,25 +1,25 @@
 <template>
-  <div class="wrap">
-    <v-img src="../assets/dot-map.png" alt></v-img>
-    <div class="data">
+  <v-card flat>
+    <v-img  class="wrapp" src="../assets/dot-map.png" alt="#">
+    <v-card flat class="data ma-4">
       <h2>Sign up</h2>
       <p class="number">10,000</p>
       <p class="text">registration now open</p>
-      <v-btn bottom width="200" height="55" color="#FFFFFF" class="button" to="/register">Register</v-btn>
-    </div>
-  </div>
+      <v-btn bottom min-width="200" min-height="55" color="#FFFFFF" class="button" to="/register">Register</v-btn>
+    </v-card>
+    </v-img>
+  </v-card>
 </template>
 
 //WARN: Отсутствуют шрифты.
 //FIXME: На макете .wrap шире v-conteiner, а v-img по ширине контейнера.
 //INFO: Верхние отступы margin-top, нуждаются в настройке, после подключения шрифтов.
 <style scoped>
-.wrap {
+.wrapp {
   background: rgba(16, 156, 241, 0.97);
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
 }
 .data {
   background: rgba(0, 0, 0, 0);
@@ -27,7 +27,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: absolute;
 }
 .date > h2 {
   margin-top: 0px; /* <<== requires customization */

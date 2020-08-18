@@ -9,10 +9,7 @@
               class="mt-5"
             >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio quaerat est sit? Labore accusamus doloremque eum porro? Quo iste placeat nihil alias amet!</p>
             <v-btn
-              width="280"
-              height="70"
-              color="#109CF1"
-              class="mt-15 buttons header-btn"
+              class="mt-15 pl-10 pr-10 pt-5 pb-5 buttons header-btn"
             >Lorem ipsum</v-btn>
           </v-card>
         </v-row>
