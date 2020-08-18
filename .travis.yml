@@ -11,6 +11,5 @@ deploy:
 
   token: $GITHUB_TOKEN
   keep_history: true
-  local_dir: build
-  on:
-    branch: master
+  local_dir: dist
+  edge: true
