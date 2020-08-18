@@ -1,18 +1,26 @@
 <template>
-<v-container>
-   <Carousel :scrollPerPage="true" :perPageCustom="[[480, 1], [768, 2],[1024,3]]">
-    <Slide v-for="(element,index) in elements" :key="index">
+<v-container fluid>
+   <Carousel class="carousel" :paginationEnabled="false" :scrollPerPage="false" :navigationEnabled="true" :perPageCustom="[[300, 1], [768, 2],[1440,3]]">
+    <Slide  class="slide" v-for="(element,index) in elements" :key="index" >
       <BlogCard
         :title="element.title"
         :description="element.description"
         :imageURL="element.imageURL"
         :date="element.date"
         :link="element.link"
+        width="380px"
       />
     </Slide>
   </Carousel>
 </v-container>
 </template>
+<style scoped>
+@media  screen and (max-width: 600px) {
+  .slide{
+    width: 100px;
+  }
+}
+</style>
 <script>
 import { Carousel, Slide } from 'vue-carousel'
 import BlogCard from '@/components/BlogCard.vue'

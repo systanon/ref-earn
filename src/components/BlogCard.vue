@@ -1,5 +1,5 @@
 <template>
-  <v-card flat class="card">
+  <v-card flat class="card ">
     <v-img  src="https://picsum.photos/380/237?random" alt></v-img>
     <!-- <v-img height="237" width="380" :src="imageURL" alt=""></v-img> -->
     <div height="277" width="52" class="date">

@@ -50,7 +50,7 @@
           </v-sheet>
         </v-carousel-item>
       </v-carousel>-->
-      <Carousel :elements="posts"/>
+      <Swiper :elements="posts"/>
     </v-row>
   </v-container>
 </template>
@@ -74,7 +74,8 @@ h2 {
 <script>
 import { mapState } from 'vuex'
 // import BlogCard from '@/components/BlogCard.vue'
-import Carousel from '@/components/Carousel.vue'
+// import Carousel from '@/components/Carousel.vue'
+import Swiper from '@/components/Swiper.vue'
 
 export default {
   name: 'Blog',
@@ -103,7 +104,7 @@ export default {
         link: '/blog/post3',
       },
       {
-        title: 'Lorem ipsum dolor sit amet 3',
+        title: 'Lorem ipsum dolor sit amet 4',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
         imageURL: '../assets/image 3.png',
         date: new Date(),
@@ -113,7 +114,8 @@ export default {
   }),
   components: {
     // BlogCard,
-    Carousel,
+    // Carousel,
+    Swiper,
   },
   computed: {
     ...mapState({ screen: 'viewportWidth' }),

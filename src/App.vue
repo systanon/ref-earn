@@ -6,7 +6,7 @@
     <AppBar v-if="appBarShowInRouteNames.includes(this.$route.name)" />
 
     <v-main>
-      <v-container>
+      <v-container fluid>
         <router-view />
       </v-container>
     </v-main>
