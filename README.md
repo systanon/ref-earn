@@ -1,6 +1,6 @@
 # refearn
 
-[**demo**](https://vue-command.github.io/portal/)
+[**demo**](https://vue-command.github.io/ref-earn/)
 
 ## Project setup
 ```
