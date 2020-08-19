@@ -6,11 +6,11 @@
     <AppBar v-if="appBarShowInRouteNames.includes(this.$route.name)" />
 
     <v-main>
-      <v-container fluid>
-        <v-row>
+      <!-- <v-container fluid>
+        <v-row> -->
             <router-view />
-        </v-row>
-      </v-container>
+        <!-- </v-row>
+      </v-container> -->
     </v-main>
 
     <Footer v-if="footerShowInRouteNames.includes(this.$route.name)" />
