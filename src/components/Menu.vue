@@ -2,7 +2,8 @@
   <v-card flat>
 
     <!-- <v-btn v-if="mobile_icon" v-model="drawer" @click="toggleNav">open</v-btn> -->
-    <v-app-bar-nav-icon class="btn-mobile-menu" v-if="mobile_icon" @click="toggleNav">{{ hidden ? 'Hide' : 'Show' }}</v-app-bar-nav-icon>
+    <!-- <v-app-bar-nav-icon-- class="btn-mobile-menu" v-if="mobile_icon" @click="toggleNav">{{ hidden ? 'Hide' : 'Show' }}</v-app-bar-nav-icon-->
+    <BurgerButton class="btn-mobile-menu" v-if="mobile_icon" :click="toggleNav" :hidden="hidden"/>
     <v-list class="menu" ref="nav">
       <!-- <v-list-item class="menu-item" v-for="link in links" :key="link.text" @click="openLoginPopup">
             {{link.text}}
@@ -57,21 +58,17 @@
 </style>
 
 <script>
+import BurgerButton from '@/components/BurgerButton.vue'
+
 export default {
   name: 'Menu',
+  components: {
+    BurgerButton,
+  },
   data() {
     return {
       mobile_icon: true,
-      // drawer: false,
       hidden: false,
-      // links: [
-      //   { text: 'Blog' },
-      //   { text: 'About us' },
-      //   { text: 'Contact' },
-      //   {
-      //     text: 'Login ', icon: 'mdi-account', link: 'openLoginPopup',
-      //   },
-      // ],
     }
   },
   methods: {
