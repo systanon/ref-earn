@@ -1,5 +1,7 @@
 # refearn
 
+[**demo**](https://vue-command.github.io/ref-earn/)
+
 ## Project setup
 ```
 npm install
