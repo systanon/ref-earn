@@ -2,7 +2,6 @@
   <v-container>
     <v-row>
       <v-col cols="12" order="2" xs="12" order-md="1" md="6">
-        <v-row>
           <v-card flat class="mt-15 header-text">
             <h1 class="mt-15">Lorem ipsum dolor</h1>
             <p
@@ -12,12 +11,9 @@
               class="mt-15 pl-10 pr-10 pt-5 pb-5 buttons header-btn"
             >Lorem ipsum</v-btn>
           </v-card>
-        </v-row>
       </v-col>
       <v-col cols="12" order="1" xs="12" order-md="2" md="6">
-        <v-row>
           <v-img src="../assets/header.svg"></v-img>
-        </v-row>
       </v-col>
     </v-row>
   </v-container>

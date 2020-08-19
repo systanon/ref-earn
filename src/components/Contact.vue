@@ -4,7 +4,7 @@
       <v-col cols="12" xs="12">
         <h2>Contact</h2>
       </v-col>
-      <v-col cols="12" xs="12" md="5" class="mt-12">
+      <v-col cols="12" xs="12" offset-md="1" md="5" class="mt-12">
         <v-card flat>
           <h3>Feel free to contact us anytime</h3>
           <h4>address</h4>
@@ -30,7 +30,7 @@
           </p>
         </v-card>
       </v-col>
-      <v-col cols="12" xs="12" md="7" class="mt-8">
+      <v-col cols="12" xs="12" md="5" class="mt-8">
         <v-form>
           <v-row>
             <v-col cols="12" xs="12" sm="6">

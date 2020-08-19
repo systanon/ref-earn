@@ -2,9 +2,8 @@
 <!-- <v-container> -->
   <!-- <v-row> -->
     <v-app-bar color="light" elevate-on-scroll hide-on-scroll scroll-threshold="100" app>
-    <v-img>logo</v-img>
+    <v-img>REFEARN</v-img>
     <v-spacer></v-spacer>
-
     <Menu />
   </v-app-bar>
   <!-- </v-row> -->

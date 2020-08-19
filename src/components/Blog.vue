@@ -1,5 +1,5 @@
 <template>
-  <v-container fluid>
+  <v-container>
     <v-row>
       <h2>Blog</h2>
       <Swiper :elements="posts" />

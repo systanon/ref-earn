@@ -1,5 +1,5 @@
 <template>
-  <v-container fluid>
+  <v-card flat>
     <h2 class="mt-15 section-title">About us</h2>
     <v-row>
       <v-col cols="12" order="2" xs="12" order-md="1" md="6">
@@ -15,7 +15,7 @@
           <v-img src="../assets/image 4.png"></v-img>
       </v-col>
     </v-row>
-  </v-container>
+  </v-card>
 </template>
 
 <style scoped>
